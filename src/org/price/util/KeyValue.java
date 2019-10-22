@@ -11,15 +11,15 @@ import com.google.gson.JsonParser;
 
 public class KeyValue {
 	
-	private List<String> keys;
-	private List<Object> values;
+	private static List<String> keys;
+	private static List<Object> values;
 	
 	public KeyValue(String json) {
 		processJson(json);
 	}
 	
 	
-	private void processJson(String json) {
+	public static void processJson(String json) {
 		JsonParser parser = new JsonParser();
 		JsonElement element = parser.parse(json);
 		JsonObject obj = element.getAsJsonObject(); //since you know it's a JsonObject
