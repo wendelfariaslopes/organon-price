@@ -1,2 +1,10 @@
+<<<<<<< HEAD
 /build/
+=======
+/bin/
+>>>>>>> branch 'master' of https://github.com/wendellopesfarias/organon-price.git
 /target/
+/pom.xml
+/.classpath
+/.gitignore
+/.project
